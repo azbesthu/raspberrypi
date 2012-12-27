@@ -11,7 +11,7 @@ wget https://raw.github.com/raspberrypi/firmware/$REV/extra/Module.symvers -O ra
 
 SOURCEHASH=`cat rasp-tmp/git_hash` 
 
-wget https://github.com/raspberrypi/linux/tarball/$SOURCEHASH -O rasp-tmp/linux.tar.gz
+wget -c https://github.com/raspberrypi/linux/tarball/$SOURCEHASH -O rasp-tmp/linux.tar.gz
 
 cd  rasp-tmp
 tar -xzf linux.tar.gz
